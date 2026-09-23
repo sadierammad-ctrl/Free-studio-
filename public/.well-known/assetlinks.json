@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.freestudio.app",
+    "sha256_cert_fingerprints": [
+      "14:6D:E9:D5:AB:52:51:98:EC:D2:38:4A:09:41:9C:E2:4E:9F:26:FF:A5:A0:E6:DF:13:82:1A:E8:22:98:68:55"
+    ]
+  }
+}]

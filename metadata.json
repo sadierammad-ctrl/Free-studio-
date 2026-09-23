@@ -1,0 +1,6 @@
+{
+  "name": "FREE STUDIO — AI Video Studio (ফ্রি স্টুডিও)",
+  "description": "Modern Android & Web AI video creation and video processing platform with device-bound subscription plans, bKash/Nagad verification, AI script/title/hashtag generation, and Fair Use bypass engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
