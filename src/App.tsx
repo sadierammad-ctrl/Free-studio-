@@ -8,6 +8,7 @@ import { DisclaimerModal } from './components/DisclaimerModal';
 import { GuideModal } from './components/GuideModal';
 import { MovieModal } from './components/MovieModal';
 import { PWAInstallModal } from './components/PWAInstallModal';
+import { MobileBottomNav } from './components/MobileBottomNav';
 import { SplashScreen } from './components/SplashScreen';
 import { AuthModal } from './components/AuthModal';
 import { DashboardView } from './components/DashboardView';
@@ -422,11 +423,18 @@ export default function App() {
 
       {/* Offline Status Badge */}
       {!isOnline && (
-        <div className="fixed bottom-4 left-4 z-50 flex items-center space-x-2 bg-amber-500/90 backdrop-blur-md text-slate-950 font-bold px-3.5 py-1.5 rounded-full text-xs shadow-xl border border-amber-300">
+        <div className="fixed bottom-16 left-4 z-50 flex items-center space-x-2 bg-amber-500/90 backdrop-blur-md text-slate-950 font-bold px-3.5 py-1.5 rounded-full text-xs shadow-xl border border-amber-300">
           <span className="w-2.5 h-2.5 rounded-full bg-slate-950 animate-pulse" />
           <span>অফলাইন মোড — সম্পূর্ণ ব্রাউজারে কাজ করছে</span>
         </div>
       )}
+
+      {/* Mobile Bottom Navigation Bar */}
+      <MobileBottomNav
+        currentTab={currentTab}
+        onNavigateTab={setCurrentTab}
+        onOpenAuthModal={() => setIsAuthOpen(true)}
+      />
 
     </div>
   );
